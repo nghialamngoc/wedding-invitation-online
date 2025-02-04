@@ -1,0 +1,26 @@
+.root {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+}
+
+.left {
+  background-image: url("/assets/wave-left.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-repeat: no-repeat;
+}
+
+.right {
+  background-image: url("/assets/wave-right.svg");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0%;
+  top: 0;
+  background-repeat: no-repeat;
+}
