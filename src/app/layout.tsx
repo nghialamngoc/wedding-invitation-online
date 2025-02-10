@@ -1,14 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Italianno, Agbalumo } from "next/font/google";
+import {
+  Dancing_Script,
+  Roboto_Mono,
+  Italianno,
+  Agbalumo,
+} from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dancingScript = Dancing_Script({
+  variable: "--font-dancing",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const robotoMono = Roboto_Mono({
+  variable: "--font-roboto",
   subsets: ["latin"],
 });
 
@@ -37,7 +42,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${italianno.variable} ${agbalumo.variable} antialiased`}
+        className={`${dancingScript.variable} ${robotoMono.variable} ${italianno.variable} ${agbalumo.variable} antialiased`}
       >
         {children}
       </body>

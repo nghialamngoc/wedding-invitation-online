@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 
 export const HeadingSectionV1 = () => {
   return (
-    <div className="text-white text-center py-8 font-[family-name:var(--font-geist-sans)] bg-[#690518]">
+    <div className="text-white text-center py-8 bg-[#690518]">
       <motion.div
         className="text-4xl font-medium font-[family-name:var(--font-agbalumo)]"
         initial={{ y: -15, opacity: 0 }}
@@ -42,11 +42,12 @@ export const HeadingSectionV1 = () => {
           alt="banner-1"
           width={828}
           height={786}
+          priority
         />
       </motion.div>
 
       <motion.div
-        className="flex mt-6 justify-center items-center text-2xl"
+        className="flex mt-6 justify-center items-center text-xl"
         initial={{ y: -15, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
@@ -58,7 +59,7 @@ export const HeadingSectionV1 = () => {
           <div>11:00</div>
           <div>Thứ 7</div>
         </div>
-        <div className="flex gap-3 pl-4 items-center text-3xl italic">
+        <div className="flex gap-3 pl-4 items-center text-2xl italic">
           <div>01.03</div>
           <div className="flex flex-col leading-[30px]">
             <div>20</div>
@@ -68,7 +69,7 @@ export const HeadingSectionV1 = () => {
       </motion.div>
 
       <motion.div
-        className="mt-2 text-lg"
+        className="mt-2"
         initial={{ y: 10, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{
