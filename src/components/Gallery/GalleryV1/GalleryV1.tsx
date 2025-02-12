@@ -22,10 +22,11 @@ const data = [
 
 export const GalleryV1 = () => {
   return (
-    <div className="bg-white text-black pt-8 px-2">
+    <div className="bg-white text-black pt-8 px-4">
       <div className="flex gap-2 justify-center items-center text-4xl font-[family-name:var(--font-italianno)]">
         <span>Album ảnh cưới</span>
         <span className="border-t-2 border-black flex-grow"></span>
+        <Image src={"/assets/heart.png"} width={30} height={30} alt="heart" />
       </div>
 
       <div className="overflow-hidden mt-2">
@@ -44,7 +45,6 @@ export const GalleryV1 = () => {
                       opacity: 0,
                     }}
                     whileInView={{ x: 0, opacity: 1 }}
-                    viewport={{ once: true }}
                     transition={{ duration: 1.5, ease: "easeOut" }}
                     className="shadow-md"
                   >

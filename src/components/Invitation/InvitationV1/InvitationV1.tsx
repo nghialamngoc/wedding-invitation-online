@@ -1,57 +1,33 @@
 "use client";
 
-import { FC, useEffect, useRef } from "react";
+import { FC } from "react";
 import styles from "./InvitationV1.module.css";
 import * as motion from "motion/react-client";
 import { InvitationProps } from "../Invitation";
 import clsx from "clsx";
 import Image from "next/image";
-import { inView } from "motion";
-
-const data = [
-  {
-    image: "/assets/invitation-2.jpg",
-  },
-  {
-    image: "/assets/invitation-1.jpg",
-  },
-  {
-    image: "/assets/invitation-4.jpg",
-  },
-];
 
 export const InvitationV1: FC<InvitationProps> = (props) => {
-  const imageEl = useRef(null);
-
-  useEffect(() => {
-    const imageAnimation = () => {
-      if (!imageEl.current) return;
-
-      inView(imageEl.current, (item) => {
-        const element = item as HTMLElement;
-
-        element.style.transform = "scale(1)";
-        element.style.opacity = "1";
-        element.style.transition = "all 0.8s ease-in-out";
-      });
-    };
-
-    imageAnimation();
-  }, []);
-
   return (
     <div className="bg-white text-black text-center py-2">
-      <div className="m-auto pt-2 px-3 w-fit font-[family-name:var(--font-italianno)] text-5xl border-t-2 border-black">
-        Thư mời
-      </div>
+      <motion.div
+        initial={{ y: -100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
+        <div className="m-auto pt-4 px-3 w-fit font-[family-name:var(--font-italianno)] border-t-2 text-5xl border-black">
+          Thư mời
+        </div>
+        <div className="text-[14px]">
+          Tham dự lễ cưới của Ngọc Nghĩa và Kim Huyền
+        </div>
+      </motion.div>
 
-      <div className="text-[14px]">
-        Tham dự lễ cưới của Ngọc Nghĩa và Kim Huyền
-      </div>
-
-      <div
-        ref={imageEl}
-        className="mx-auto relative w-[240px] h-[300px] mt-4 scale-75"
+      <motion.div
+        className="mx-auto relative w-[240px] h-[300px] mt-6 scale-75"
+        initial={{ scale: 0.7, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
       >
         <Image
           className="object-cover rounded-md shadow-xl"
@@ -59,11 +35,19 @@ export const InvitationV1: FC<InvitationProps> = (props) => {
           fill
           alt="invitation"
         />
-      </div>
+      </motion.div>
 
-      <div className="mt-5">
-        <div className="text-xl font-medium">Thứ 7 | 11h00</div>
-        <div className="text-xl font-medium">Tháng 03/2025</div>
+      <motion.div
+        initial={{ scale: 1.3, opacity: 0 }}
+        whileInView={{ scale: 1, opacity: 1 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="mt-6"
+      >
+        <div className="text-xl font-medium">
+          <div>Thứ 7 | 11h00</div>
+          <div>Tháng 03/2025</div>
+        </div>
+
         <div className={styles.calendar}>
           <div className={styles.weekdays}>
             <div>Sun</div>
@@ -117,7 +101,7 @@ export const InvitationV1: FC<InvitationProps> = (props) => {
             <div className={styles.day}>31</div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

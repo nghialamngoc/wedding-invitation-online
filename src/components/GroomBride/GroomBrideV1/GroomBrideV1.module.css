@@ -1,0 +1,8 @@
+.root {
+  color: black;
+  padding: 16px 0;
+  text-align: center;
+  /* background-image: url("/assets/background-1.jpg"); */
+  background: white;
+  /* background-size: 50%; */
+}

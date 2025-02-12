@@ -2,12 +2,11 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import clsx from "clsx";
 import Image from "next/image";
 
 export const ThankyouV1 = () => {
   return (
-    <div className="bg-white text-black px-2 relative">
+    <div className="bg-white text-black mx-4 relative overflow-hidden">
       <motion.div
         className="relative w-full aspect-[1/1]"
         initial={{

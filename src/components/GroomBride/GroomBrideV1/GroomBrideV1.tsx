@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import styles from "./GroomBrideV1.module.css";
 
 const data = [
   {
@@ -14,14 +15,14 @@ const data = [
   {
     image: "/assets/bride.jpg",
     name: "Kim Huyền",
-    father: "Lâm Ngọc Thìn",
-    mother: "Nguyễn Thị Thúy",
+    father: "Phạm Bình",
+    mother: "Lê Thị Liên",
   },
 ];
 
 export const GroomBrideV1 = () => {
   return (
-    <div className="bg-white text-black text-center py-8">
+    <div className={styles.root}>
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -41,10 +42,15 @@ export const GroomBrideV1 = () => {
               key={index}
             >
               <motion.div
-                initial={{ x: index === 0 ? -100 : 100, opacity: 0 }}
-                whileInView={{ x: 0, opacity: 1 }}
+                initial={{
+                  x: index === 0 ? 200 : -200,
+                  y: index === 0 ? 100 : -100,
+                  opacity: 1,
+                  rotateY: -180,
+                }}
+                whileInView={{ x: 0, y: 0, opacity: 1, rotateY: 180 }}
                 transition={{ duration: 1.5, ease: "easeOut" }}
-                viewport={{ once: true }}
+                // viewport={{ once: true }}
                 className={`relative w-full h-[260px] md:h-[400px] ${
                   index === 1 ? "order-2" : "order-1"
                 }`}
@@ -57,7 +63,12 @@ export const GroomBrideV1 = () => {
                 />
               </motion.div>
 
-              <div className={index === 1 ? "order-1" : "order-2"}>
+              <motion.div
+                initial={{ x: index === 0 ? -100 : 100, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                transition={{ duration: 1.5, ease: "easeOut" }}
+                className={index === 1 ? "order-1" : "order-2"}
+              >
                 <p className="mt-4 italic font-medium text-lg">
                   {index === 0 ? "Nhà Trai" : "Nhà Gái"}
                 </p>
@@ -72,7 +83,7 @@ export const GroomBrideV1 = () => {
                 <p className="mt-1 font-[family-name:var(--font-italianno)] text-4xl">
                   {item.name}
                 </p>
-              </div>
+              </motion.div>
             </div>
           );
         })}
