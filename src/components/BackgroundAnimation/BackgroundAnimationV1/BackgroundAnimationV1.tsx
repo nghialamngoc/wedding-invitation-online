@@ -15,13 +15,12 @@ const count = 60;
 export const BackgroundAnimationV1 = () => {
   useEffect(() => {
     const width = document.documentElement.clientWidth;
-    const height = document.documentElement.clientHeight;
     const container = document.getElementsByTagName("body");
 
     const createElement = () => {
       for (let i = 0; i < count; i++) {
         const randomLeft = Math.floor(Math.random() * width) - 20;
-        const randomTop = Math.floor(Math.random() * height);
+        const randomTop = Math.floor(Math.random() * 50);
         const randomIcon = Math.floor(Math.random() * 4);
         const randomTimming = Math.floor(Math.random() * 12) + 5;
 

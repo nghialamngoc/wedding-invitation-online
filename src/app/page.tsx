@@ -1,6 +1,6 @@
 import BackgroundAnimation from "@/components/BackgroundAnimation";
 import HeadingSection from "@/components/HeadingSection";
-// import Openning from "@/components/Openning";
+import Openning from "@/components/Openning";
 import dynamic from "next/dynamic";
 
 const GroomBride = dynamic(() => import("../components/GroomBride"));
@@ -13,7 +13,7 @@ const AudioPlayer = dynamic(() => import("../components/AudioPlayer"));
 export default function Home() {
   return (
     <div className="bg-white font-[family-name:var(--font-roboto)] max-w-screen-sm mx-auto">
-      {/* <Openning className="md:hidden" /> */}
+      <Openning className="md:hidden" />
       <HeadingSection />
       <BackgroundAnimation />
       <GroomBride />
