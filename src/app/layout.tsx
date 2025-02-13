@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import {
-  Dancing_Script,
-  Roboto_Mono,
-  Italianno,
-  Agbalumo,
-} from "next/font/google";
+import { Roboto_Mono, Italianno, Agbalumo, Andika } from "next/font/google";
 import "./globals.css";
 
-const dancingScript = Dancing_Script({
-  variable: "--font-dancing",
+const andika = Andika({
+  variable: "--font-andika",
   subsets: ["latin"],
+  weight: ["400", "700"],
 });
 
 const robotoMono = Roboto_Mono({
@@ -46,7 +42,7 @@ export default function RootLayout({
         content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
       />
       <body
-        className={`${dancingScript.variable} ${robotoMono.variable} ${italianno.variable} ${agbalumo.variable} antialiased`}
+        className={`${andika.variable} ${robotoMono.variable} ${italianno.variable} ${agbalumo.variable} antialiased`}
       >
         {children}
       </body>

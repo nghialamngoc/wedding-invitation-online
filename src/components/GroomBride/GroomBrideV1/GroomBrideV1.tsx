@@ -13,7 +13,7 @@ const data = [
     mother: "Nguyễn Thị Thúy",
   },
   {
-    image: "/assets/bride.jpg",
+    image: "/assets/16.jpg",
     name: "Kim Huyền",
     father: "Phạm Bình",
     mother: "Lê Thị Liên",

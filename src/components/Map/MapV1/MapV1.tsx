@@ -1,6 +1,6 @@
 export const MapV1 = () => {
   return (
-    <div className="text-center mx-4 pt-4 pb-8 rounded-t-[80px] text-black bg-pink-300">
+    <div className="text-center mx-4 pt-4 pb-8 rounded-t-[80px] bg-pink-300">
       <div className="m-auto pt-2 px-3 w-fit font-[family-name:var(--font-italianno)] text-4xl">
         Địa điểm tổ chức
       </div>

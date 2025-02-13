@@ -7,7 +7,7 @@ import { ThankyouProps } from "../Thankyou";
 
 export const ThankyouV1: FC<ThankyouProps> = () => {
   return (
-    <div className="bg-white text-black mx-4 relative overflow-hidden">
+    <div className="mx-4 relative overflow-hidden">
       <motion.div
         className="relative w-full aspect-[1/1]"
         initial={{
@@ -15,10 +15,15 @@ export const ThankyouV1: FC<ThankyouProps> = () => {
           scale: 0.9,
         }}
         whileInView={{ opacity: 1, scale: 1 }}
-        viewport={{ once: true }}
         transition={{ duration: 0.7, ease: "easeOut" }}
       >
-        <Image src="/assets/8.jpg" fill alt="thank_you" priority />
+        <Image
+          className="shadow-lg"
+          src="/assets/8.jpg"
+          fill
+          alt="thank_you"
+          priority
+        />
       </motion.div>
 
       <motion.div
@@ -28,7 +33,6 @@ export const ThankyouV1: FC<ThankyouProps> = () => {
           opacity: 0,
         }}
         whileInView={{ opacity: 1, y: "-50%" }}
-        viewport={{ once: true }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
         <div className="text-6xl font-medium">Thank you</div>

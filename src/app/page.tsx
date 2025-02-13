@@ -12,7 +12,7 @@ const AudioPlayer = dynamic(() => import("../components/AudioPlayer"));
 
 export default function Home() {
   return (
-    <div className="bg-white font-[family-name:var(--font-roboto)] max-w-screen-sm mx-auto">
+    <div className="bg-white text-[#690518] font-[family-name:var(--font-andika)] max-w-screen-sm mx-auto">
       <Openning className="md:hidden" />
       <HeadingSection />
       <BackgroundAnimation />

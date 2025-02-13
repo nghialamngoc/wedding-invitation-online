@@ -9,22 +9,16 @@ import Image from "next/image";
 
 export const InvitationV1: FC<InvitationProps> = () => {
   return (
-    <div className="bg-white text-black text-center py-2">
-      <motion.div
-        initial={{ y: -100, opacity: 0 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
-      >
-        <div className="m-auto pt-4 px-3 w-fit font-[family-name:var(--font-italianno)] border-t-2 text-5xl border-black">
+    <div className="text-center py-2 overflow-hidden">
+      <motion.div>
+        <div className="m-auto pt-4 px-3 w-fit font-[family-name:var(--font-italianno)] border-t-2 text-5xl border-[#690518]">
           Thư mời
         </div>
-        <div className="text-[14px]">
-          Tham dự lễ cưới của Ngọc Nghĩa và Kim Huyền
-        </div>
+        <div>Tham dự lễ cưới của Ngọc Nghĩa và Kim Huyền</div>
       </motion.div>
 
       <motion.div
-        className="mx-auto relative w-[240px] h-[300px] mt-6 scale-75"
+        className="mx-auto relative w-[300px] h-[360px] mt-6 scale-75"
         initial={{ scale: 0.7, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

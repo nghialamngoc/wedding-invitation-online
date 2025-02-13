@@ -6,7 +6,14 @@ import clsx from "clsx";
 
 export const OpenningV1: FC<OpenningProps> = (props) => {
   return (
-    <motion.div className={clsx(styles.root, props.className)}>
+    <motion.div
+      animate={{ display: "none" }}
+      transition={{
+        duration: 2.1,
+        ease: "easeOut",
+      }}
+      className={clsx(styles.root, props.className)}
+    >
       <motion.div
         className={styles.left}
         // initial={{ scale: 1 }}

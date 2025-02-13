@@ -3,7 +3,7 @@ import * as motion from "motion/react-client";
 
 export const HeadingSectionV1 = () => {
   return (
-    <div className="text-white text-center py-8 bg-[#690518]">
+    <div className="text-center py-8 ">
       <motion.div
         className="text-4xl font-medium font-[family-name:var(--font-agbalumo)]"
         initial={{ y: -15, opacity: 0 }}
@@ -38,7 +38,7 @@ export const HeadingSectionV1 = () => {
       >
         <Image
           className="px-4 mt-6"
-          src={"/assets/banner1.jpg"}
+          src={"/assets/17.jpg"}
           alt="banner-1"
           width={828}
           height={786}
@@ -55,7 +55,7 @@ export const HeadingSectionV1 = () => {
           ease: "easeOut",
         }}
       >
-        <div className="border-r-2 pr-4 border-white">
+        <div className="border-r-2 pr-4 border-[#690518]">
           <div>11:00</div>
           <div>Thứ 7</div>
         </div>
@@ -77,7 +77,7 @@ export const HeadingSectionV1 = () => {
           ease: "easeOut",
         }}
       >
-        ( Nhằm Ngày 2 Tháng 2 Năm Ất Tỵ )
+        (Nhằm Ngày 2 Tháng 2 Năm Ất Tỵ)
       </motion.div>
     </div>
   );

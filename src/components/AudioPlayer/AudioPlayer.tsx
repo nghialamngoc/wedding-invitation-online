@@ -47,7 +47,7 @@ export const AudioPlayer = () => {
 
   return (
     <div>
-      <audio ref={audioRef} src={"/assets/audio.mp3"} preload="auto" />
+      <audio ref={audioRef} src={"/assets/audio-2.mp3"} preload="auto" loop />
     </div>
   );
 };
