@@ -4,7 +4,6 @@ import { QRBank } from "@/app/ui/molecules/Modals/QRBank/QRBank";
 import NiceModal from "@ebay/nice-modal-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import IconArrowRight from "@/app/ui/icons/IconArrowRight";
 import IconArrowLeft from "@/app/ui/icons/IconArrowLeft";
 
 export const HappyQRV1 = () => {
