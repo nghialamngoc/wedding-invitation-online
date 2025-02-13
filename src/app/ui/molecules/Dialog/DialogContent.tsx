@@ -11,7 +11,7 @@ export const DialogContent = forwardRef<HTMLDivElement, HTMLMotionProps<"div">>(
         ref={ref}
         data-part="dialog-content"
         className={clsx(
-          "relative z-10 flex flex-col w-full bg-white rounded-md mx-8",
+          "relative z-10 flex flex-col bg-white rounded-md mx-8",
           className
         )}
         initial={{ opacity: 0 }}

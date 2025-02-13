@@ -13,8 +13,6 @@ export interface DialogRootProps {
 export const DialogRoot = ({ id, className, children }: DialogRootProps) => {
   const { isOpen, onExitComplete } = useDialogContext();
 
-  console.log("isOpen", isOpen);
-
   return (
     <AnimatePresence onExitComplete={onExitComplete}>
       {isOpen && (
