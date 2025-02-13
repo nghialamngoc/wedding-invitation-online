@@ -5,7 +5,9 @@ const GalleryV1 = dynamic(() => import("./GalleryV1"));
 
 type Design = "v1" | "v2" | "v3";
 
-export interface GalleryProps {}
+export interface GalleryProps {
+  className?: string;
+}
 
 export const Gallery = memo<GalleryProps & { design?: Design }>(
   ({ design, ...props }) => {

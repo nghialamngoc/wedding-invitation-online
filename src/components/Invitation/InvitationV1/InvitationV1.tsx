@@ -7,7 +7,7 @@ import { InvitationProps } from "../Invitation";
 import clsx from "clsx";
 import Image from "next/image";
 
-export const InvitationV1: FC<InvitationProps> = (props) => {
+export const InvitationV1: FC<InvitationProps> = () => {
   return (
     <div className="bg-white text-black text-center py-2">
       <motion.div

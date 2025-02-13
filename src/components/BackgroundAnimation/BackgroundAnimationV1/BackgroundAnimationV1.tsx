@@ -1,8 +1,6 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Image from "next/image";
-import { motion } from "framer-motion";
 import styles from "./BackgroundAnimationV1.module.css";
 
 const icons = [

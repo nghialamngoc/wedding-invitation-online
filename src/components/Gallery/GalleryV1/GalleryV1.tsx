@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import clsx from "clsx";
+import { GalleryProps } from "../Gallery";
 
 const data = [
   {
@@ -20,7 +21,7 @@ const data = [
   },
 ];
 
-export const GalleryV1 = () => {
+export const GalleryV1: FC<GalleryProps> = () => {
   return (
     <div className="bg-white text-black pt-8 px-4">
       <div className="flex gap-2 justify-center items-center text-4xl font-[family-name:var(--font-italianno)]">

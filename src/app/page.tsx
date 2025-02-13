@@ -1,6 +1,6 @@
 import BackgroundAnimation from "@/components/BackgroundAnimation";
 import HeadingSection from "@/components/HeadingSection";
-import Openning from "@/components/Openning";
+// import Openning from "@/components/Openning";
 import dynamic from "next/dynamic";
 
 const GroomBride = dynamic(() => import("../components/GroomBride"));

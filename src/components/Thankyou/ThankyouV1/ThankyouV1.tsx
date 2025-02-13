@@ -1,10 +1,11 @@
 "use client";
 
-import React from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { ThankyouProps } from "../Thankyou";
 
-export const ThankyouV1 = () => {
+export const ThankyouV1: FC<ThankyouProps> = () => {
   return (
     <div className="bg-white text-black mx-4 relative overflow-hidden">
       <motion.div

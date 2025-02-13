@@ -1,6 +1,5 @@
 "use client";
 
-import { autoScrollTop } from "@/app/hooks/autoScrollTop";
 import { useEffect, useRef, useState } from "react";
 
 export const AudioPlayer = () => {

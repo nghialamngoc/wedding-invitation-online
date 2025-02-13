@@ -5,7 +5,9 @@ const ThankyouV1 = dynamic(() => import("./ThankyouV1"));
 
 type Design = "v1" | "v2" | "v3";
 
-export interface ThankyouProps {}
+export interface ThankyouProps {
+  className?: string;
+}
 
 export const Thankyou = memo<ThankyouProps & { design?: Design }>(
   ({ design, ...props }) => {

@@ -1,6 +1,3 @@
-import Image from "next/image";
-import * as motion from "motion/react-client";
-
 export const MapV1 = () => {
   return (
     <div className="text-center mx-4 pt-4 pb-8 rounded-t-[80px] text-black bg-pink-300">
