@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Roboto_Mono, Italianno, Agbalumo, Andika } from "next/font/google";
+
 import "./globals.css";
 
 const andika = Andika({

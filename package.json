@@ -10,7 +10,9 @@
     "build:analyze": "ANALYZE=true yarn build"
   },
   "dependencies": {
+    "@ebay/nice-modal-react": "^1.2.13",
     "clsx": "^2.1.1",
+    "css-variants": "^2.1.0",
     "framer-motion": "^12.4.1",
     "motion": "^12.0.6",
     "next": "15.1.6",

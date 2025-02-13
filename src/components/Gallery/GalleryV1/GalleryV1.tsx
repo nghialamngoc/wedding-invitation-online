@@ -39,7 +39,7 @@ const data = [
 
 export const GalleryV1: FC<GalleryProps> = () => {
   return (
-    <div className="bg-white pt-8 px-4">
+    <div className="bg-white pt-4 px-4">
       <div className="flex gap-2 justify-center items-center text-4xl font-[family-name:var(--font-italianno)]">
         <span>Album ảnh cưới</span>
         <span className="border-t-2 border-black flex-grow"></span>
